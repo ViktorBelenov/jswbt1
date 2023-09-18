@@ -1,11 +1,9 @@
 const isStrangeNumber = (number) => {
   let result = false;
   const dividers = getDividers(number);
-  console.log(dividers);
   const dividersSum = dividers.reduce((acamulator, currentValue)=>{
     return acamulator+=currentValue;
   });
-  console.log(dividersSum);
 
   if (number === dividersSum) {
     result = true;
